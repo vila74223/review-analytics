@@ -10,4 +10,7 @@ with open('reviews.txt','r') as f:
 			print(len(data))
 #avr = length/count (wrong)
 #prit(avr) (wrong)
-
+length = 0
+for d in data:
+	length = length + len(d)
+	print(length/len(data))
