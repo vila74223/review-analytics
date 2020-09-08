@@ -27,3 +27,12 @@ for d in data:
 	if 'good' in d:
 		good.append(d)
 print("There are", len(good), "reviews mentioned good.")
+
+#Advanced version
+Good = [d for d in data if ‘good’ in d]
+print("There are", len(good), "reviews mentioned good.")
+
+Good = [1 for d in data if ‘good’ in d]  #will print a lot of 1
+Bad = [‘bad’ in d for d in data]  #will print a lot of false an true
+#Output = [(number-1) for number in reference if number % 2 == 0]
+
